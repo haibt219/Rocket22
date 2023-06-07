@@ -1,0 +1,49 @@
+{
+  "seafoods": [
+    {
+      "id": 1,
+      "name": "Cá thu",
+      "price": "400",
+      "avarta": "https://cdn.tgdd.vn/2020/08/CookRecipe/Avatar/ca-thu-tuoi-sot-ca-thumbnail.jpg",
+      "address": "Hà Nội",
+      "origin": "Hải Phòng",
+      "abbreviate": "Cá thu là loài ăn tạp, thức ăn của chúng là những sinh vật phù du dưới nước. Các loài cá thu thường săn mồi ở độ sâu từ 10 – 40m so với mặt nước biển. Thời gian hoạt động của chúng là từ sáng sớm đến chiều tà. Vào mùa sinh sản, cá thu chọn những vùng nước ấm, có nhiều đá ngầm để đẻ trứng"
+    },
+    {
+      "id": 2,
+      "name": "Mực mai",
+      "price": "600",
+      "avarta": "https://thucthan.com/media/2018/06/muc-mai-la-gi/muc-mai-xao-ot-chuong.jpg",
+      "address": "Thanh Hoá",
+      "origin": "Hải Phòng",
+      "abbreviate": "Mực mai Kích thước của mực mai to, trung bình 1 con mực sẽ nặng từ 1 đến 3kg, có con nặng tới 7kg"
+    },
+    {
+      "id": 3,
+      "name": "Tôm hùm",
+      "price": "1000",
+      "avarta": "https://th.bing.com/th?id=OIP.bf06pSLS5ayod0x2qQnMPAHaFA&w=303&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "address": "Hà Nội",
+      "origin": "Quảng Ninh",
+      "abbreviate":  "Tôm Hùm cá thể trưởng thành có chiều dài từ 20–25 cm, một số cá thể có thể đạt đến 31 cm và nặng từ 1,4 - 1,5 kg"
+    },
+    {
+      "id": 4,
+      "name": "Sứa",
+      "price": "300",
+      "avarta": "https://cdn.tgdd.vn/2021/06/content/nom2-800x450.jpg",
+      "address": "Hải Phòng",
+      "origin": "Hải Phòng",
+      "abbreviate": "Sứa là những sinh vật biển không xương sống độc nhất của ngành Thích ty bào"
+    },
+    {
+      "id": 5,
+      "name": "Cá mập",
+      "price": "2000",
+      "avarta": "https://i.imgur.com/CJNqmpF.jpg",
+      "address": "Hà Nội",
+      "origin": "Quảng Ninh",
+      "abbreviate": "Cá mập là một nhóm cá thuộc lớp Cá sụn, thân hình thủy động học dễ dàng rẽ nước, có từ 5 đến 7 khe mang dọc mỗi bên hoặc gần đầu"
+    }
+  ]
+}

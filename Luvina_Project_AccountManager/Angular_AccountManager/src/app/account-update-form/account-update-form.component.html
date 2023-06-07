@@ -1,0 +1,58 @@
+<h2>Form Account Update</h2>
+
+<hr>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="/accounts">Account Manager</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/account-register-form">Add Account</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+
+<form [formGroup]="accountUpdateForm" (ngSubmit)="onSubmit()">
+    <table>
+        <tr>
+            <td>Fullname:</td>
+            <td><input type="text" formControlName="fullName" /></td>
+        </tr>
+        <tr>
+            <td>Department:</td>
+
+            <td><select name="department" id="department" formControlName="department">
+                    <option value="" disabled>- Chọn phong ban -</option>
+                    <option value="1">Marketing</option>
+                    <option value="2">Sale</option>
+                    <option value="3">Security</option>
+                    <option value="4">Human Resources</option>
+                    <option value="5">Technical</option>
+                    <option value="6">Finance</option>
+                    <option value="7">Deputy Manager</option>
+                    <option value="8">Manager</option>
+                    <option value="9">Secretary</option>
+                    <option value="0">Waiting</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Position:</td>
+            <td><select name="position" id="position" formControlName="position">
+                    <option value="" disabled>- Chọn chức vụ -</option>
+                    <option value="1">Dev</option>
+                    <option value="2">Test</option>
+                    <option value="3">Scrum_Master</option>
+                    <option value="4">PM</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><button type="submit" [disabled]="!accountUpdateForm.valid">UPDATE</button></td>
+        </tr>
+    </table>
+</form>

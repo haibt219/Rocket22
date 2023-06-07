@@ -1,0 +1,38 @@
+hr {
+    color: black;
+}
+
+table td,th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+table button {
+    margin: 0 5px;
+    width: 100px;
+    height: 40px;
+}
+
+nav a{
+    color: white;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: rgb(0, 191, 255);
+}
+
+nav li {
+    border-left: 1px solid rgb(75, 75, 75);
+    border-right: 1px solid rgb(75, 75, 75);
+}
+
+nav li:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    width: 20px;
+}
+

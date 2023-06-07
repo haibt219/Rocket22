@@ -1,0 +1,42 @@
+<h2>Position Manager</h2>
+<hr>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="/departments">Position Manager</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/department-add-form">Add Position</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>PositionName</th>
+        <th>Delete - Update</th>
+    </tr>
+    <tr *ngFor="let l of listPositions">
+        <td>{{ l.id }}</td>
+        <td>{{ l.name }}</td>
+
+        <td>
+            <button class="btn btn" (click)="deleteDepartment(l.id)" style="background-color: red; color: white; border-radius: 5px">
+                Delete
+            </button>
+            <button class="btn btn" (click)="editDepartment(l.id)" style="
+          background-color: rgb(20, 173, 0);
+          color: white;
+          border-radius: 5px;
+        ">
+                Update
+            </button>
+        </td>
+    </tr>
+</table>

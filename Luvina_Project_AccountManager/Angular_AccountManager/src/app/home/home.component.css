@@ -1,0 +1,11 @@
+nav img {
+    width: 1.5em;
+}
+
+li a{
+    color: white;
+}
+
+li a:hover {
+    color: rgb(22, 208, 255);
+}
