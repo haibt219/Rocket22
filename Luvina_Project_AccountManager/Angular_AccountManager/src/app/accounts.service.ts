@@ -38,6 +38,7 @@ export class AccountsService {
 
   public addAccount(data: Account): Observable<any> {
     const url = this.REST_API_SERVER_ACCOUNT;
+
     return this.httpClient
       .post<any>(url, data, httpOptions)
       .pipe(catchError(this.handleError));

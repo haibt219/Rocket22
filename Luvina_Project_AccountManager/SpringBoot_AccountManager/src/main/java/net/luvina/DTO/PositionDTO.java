@@ -1,9 +1,11 @@
 package net.luvina.DTO;
 
+import net.luvina.entity.EPositionName;
+
 public class PositionDTO {
 
 	private int id;
-	private String name;
+	private EPositionName name;
 
 	public PositionDTO() {
 		// TODO Auto-generated constructor stub
@@ -17,11 +19,11 @@ public class PositionDTO {
 		this.id = id;
 	}
 
-	public String getName() {
+	public EPositionName getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(EPositionName name) {
 		this.name = name;
 	}
 

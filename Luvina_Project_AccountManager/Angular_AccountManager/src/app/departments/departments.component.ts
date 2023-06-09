@@ -42,9 +42,9 @@ export class DepartmentsComponent {
   public deleteDepartment(id: any) {
     console.log('account id: ' + id);
     this.departmentService.deleteDepartment(Number(id)).subscribe((data) => {
-      alert('You want delete: ' + data.name);
+      console.log('You want delete: ' + data.name);
     });
-    this.getListDepartments();
+    // this.getListDepartments();
   }
 
   /**

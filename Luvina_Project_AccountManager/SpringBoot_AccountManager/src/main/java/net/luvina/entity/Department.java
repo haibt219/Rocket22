@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name = "Department", catalog = "luvina_database")
 public class Department implements Serializable {
@@ -29,6 +31,7 @@ public class Department implements Serializable {
 	private String name;
 
 	@OneToMany(mappedBy = "department")
+	@JsonManagedReference
 	private List<Account> accounts;
 
 	public Department() {

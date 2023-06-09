@@ -34,7 +34,7 @@ public class PositionController {
 		for (Position position : listPositions) {
 			PositionDTO positionDTO = new PositionDTO();
 			positionDTO.setId(position.getId());
-			positionDTO.setName(position.getName().toString());
+			positionDTO.setName(position.getName());
 			listPositionDTOs.add(positionDTO);
 		}
 
@@ -48,7 +48,7 @@ public class PositionController {
 
 		PositionDTO positionDTO = new PositionDTO();
 		positionDTO.setId(position.getId());
-		positionDTO.setName(position.getName().toString());
+		positionDTO.setName(position.getName());
 
 		return new ResponseEntity<>(positionDTO, HttpStatus.OK);
 	}
@@ -56,13 +56,11 @@ public class PositionController {
 	// Get Position By Name
 	@GetMapping("/name/{name}")
 	public ResponseEntity<?> getPositionByName(@PathVariable(name = "name") String namePos) {
-		Position position = service.getPositionByName("Test");
-		System.out.println(namePos);
-		System.out.println(position);
+		Position position = service.getPositionByName(namePos);
 
 		PositionDTO positionDTO = new PositionDTO();
 		positionDTO.setId(position.getId());
-		positionDTO.setName(position.getName().toString());
+		positionDTO.setName(position.getName());
 
 		return new ResponseEntity<>(positionDTO, HttpStatus.OK);
 	}

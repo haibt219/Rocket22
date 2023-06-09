@@ -16,6 +16,8 @@ import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name = "Account", catalog = "luvina_database")
 public class Account implements Serializable {
@@ -41,10 +43,12 @@ public class Account implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name = "DepartmentID")
+	@JsonManagedReference
 	private Department department;
 
 	@ManyToOne
 	@JoinColumn(name = "PositionID")
+	@JsonManagedReference
 	private Position position;
 
 	@Column(name = "CreateDate")

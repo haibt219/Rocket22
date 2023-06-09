@@ -46,7 +46,7 @@ export class AccountRegisterFormComponent {
       position: this.accountRegisterForm.get('positionId')?.value,
       createDate: this.accountRegisterForm.get('createDate')?.value,
     };
-
+    console.log(account);
     this.accountService.addAccount(account as Account).subscribe((data) => {
       console.log('Add Account' + data);
       this.router.navigate(['accounts']);
